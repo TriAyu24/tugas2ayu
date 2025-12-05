@@ -8,6 +8,7 @@ router.get('/:id', resepController.getResepById)
 router.post('/', resepController.createResep)
 router.put('/:id', resepController.updateResepById)
 router.delete('/:id', resepController.deleteResepById)
+router.patch('/:id', resepController.updateResepById)
 
 module.exports = router
   

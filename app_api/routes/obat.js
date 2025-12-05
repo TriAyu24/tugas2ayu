@@ -10,6 +10,7 @@ router.post("/", obatController.createObat)
 router.get("/:id", obatController.getObatById)
 router.delete("/:id", obatController.deleteObatById)
 router.put("/:id", obatController.updateObatById)
+router.patch("/:id", obatController.updateObatById)
 
 // export module
 module.exports = router
