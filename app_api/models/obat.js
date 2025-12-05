@@ -1,6 +1,5 @@
-const mongoose = require('mongoose') // impor mongoose
+const mongoose = require('mongoose')
 
-// Skema untuk collection Obat
 const obatSchema = new mongoose.Schema({
     nama_obat: {
         type: String,
@@ -11,16 +10,7 @@ const obatSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true
-    },
-    resepId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Resep", // relasi ke koleksi Resep
-        required: true
     }
 })
 
-// Membuat model Obat
-const Obat = mongoose.model("Obat", obatSchema)
-
-// Ekspor model
-module.exports = Obat
+module.exports = mongoose.model("Obat", obatSchema)

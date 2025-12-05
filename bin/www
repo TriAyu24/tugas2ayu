@@ -87,5 +87,6 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
-  console.log(`Server berjalan pada http://localhost:${port}`)
+
+  console.log(`Server berjalan pada http://localhost:${port}`);
 }
